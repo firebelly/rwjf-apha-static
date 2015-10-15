@@ -13,9 +13,18 @@ var Main = (function ($) {
         }
       });
 		},
+    editPost: function () {
+      // for the sake of testing - this will probably be angularified
+      $('.post-toggle').on('click', function() {
+        var $thisPost = $(this).closest('.post');
+        $('.post.active').not($thisPost).removeClass('active');
+        $thisPost.toggleClass('active');
+      });
+    },
 		initMain: function () {
 			$(document).ready(function () {
-				Main.characterCount();
+        Main.characterCount();
+        Main.editPost();
 			})
 		}
 	};

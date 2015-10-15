@@ -976,7 +976,11 @@ textarea {
 .posts-list li.active {
   background: #ffcc00;
 }
+.posts-list li.active .post-info {
+  display: none;
+}
 .posts-list li.active .post-edit {
+  display: block;
   padding-bottom: 48px;
 }
 .posts-list li.active .post-edit h2 {
@@ -998,7 +1002,6 @@ textarea {
 }
 .posts-list .post-info {
   height: 72px;
-  cursor: pointer;
   color: #555;
   position: relative;
   -webkit-align-items: center;
@@ -1069,4 +1072,36 @@ textarea {
   color: #231f20;
   font-size: 24px;
   font-weight: 500;
+}
+.posts-list .post .post-edit {
+  display: none;
+}
+.posts-list .post .post-header {
+  height: 96px;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.posts-list .post .post-header h1 {
+  margin: 0;
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
+}
+.posts-list .post-toggle {
+  border: none;
+  background: none;
+  display: inline-block;
+}
+.posts-list .post-toggle:focus, .posts-list .post-toggle:active {
+  outline: none;
+  -webkit-appearance: none;
+}
+.posts-list .post-toggle:hover .icon-x, .posts-list .post-toggle:focus .icon-x {
+  fill: #d0d0d0;
+}
+.posts-list .post-toggle .icon-x {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
 }

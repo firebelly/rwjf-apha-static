@@ -22,7 +22,11 @@
     // Active post
     &.active {
       background: $gold;
+      .post-info {
+        display: none; 
+      }
       .post-edit {
+        display: block;
         padding-bottom: $padding;
 
         h2 {
@@ -54,7 +58,6 @@
 
   .post-info {
     height: 72px;
-    cursor: pointer;
     color: $gray-dark;
     position: relative;
     align-items: center;
@@ -127,6 +130,40 @@
       color: $black;
       font-size: 24px;
       font-weight: 500;
+    }
+    .post-edit {
+      display: none;
+    }
+    .post-header {
+      height: 96px;
+      align-items: center;
+      h1 {
+        margin: 0;
+        flex-grow: 4;
+      }
+      .post-toggle {
+      }
+    }
+  }
+
+  // Post toggle button
+  .post-toggle {
+    border: none;
+    background: none;
+    display: inline-block;
+    &:focus, &:active {
+      outline: none;
+      -webkit-appearance: none;
+    }
+    &:hover, &:focus {
+      .icon-x {
+        fill: $gray-light;
+      }
+    }
+    .icon-x {
+      width: 18px;
+      height: 18px;
+      fill: $white;
     }
   }
 }
