@@ -21,10 +21,22 @@ var Main = (function ($) {
         $thisPost.toggleClass('active');
       });
     },
+    likeIdea: function () {
+      $('.like-this').on('click', function(){
+        $('.post-content').addClass('has-been-liked');
+        $('.liked-view').addClass('active');
+      });
+
+      $('.close-like').on('click', function(){
+        $('.post-content.has-been-liked').removeClass('has-been-liked');
+        $('.liked-view.active').removeClass('active');
+      });
+    },
 		initMain: function () {
 			$(document).ready(function () {
         Main.characterCount();
         Main.editPost();
+        Main.likeIdea();
 			})
 		}
 	};
