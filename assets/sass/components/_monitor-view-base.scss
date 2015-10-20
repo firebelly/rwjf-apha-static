@@ -154,7 +154,7 @@
       position: relative;
       align-items: flex-end;
       flex-basis: 4*$column;
-      padding: 100px 100px 16% 100px;
+      padding: 100px 100px 316px 100px;
       &::before {
         left: -26px;
         bottom: 0;
@@ -245,7 +245,7 @@
         position: absolute;
         align-items: flex-end;
         transform: translateX(100%);
-        padding: 100px 100px 332px 100px;
+        padding: 100px 100px 316px 100px;
         transition: transform 1s cubic-bezier(0.78,-0.09, 0.11, 1.03), margin 1s ease-out;
         &.active {
           margin-left: 0;
@@ -300,9 +300,9 @@
           height: 94px;
           display: flex;
           background: none;
-          margin: $padding auto 0;
           transform: rotate(45deg);
           border: 5px solid $purple;
+          margin: $padding auto 16px;
           &:focus {
             outline: none;
           }
@@ -316,6 +316,10 @@
         }
 
         .likes {
+          p {
+            font-size: 36px;
+            font-weight: 200;
+          }
           .icon-heart {
             fill: $purple;
           }

@@ -665,7 +665,7 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
   -webkit-flex-basis: 22.22222%;
       -ms-flex-preferred-size: 22.22222%;
           flex-basis: 22.22222%;
-  padding: 100px 100px 16% 100px;
+  padding: 100px 100px 316px 100px;
 }
 .monitor-view .post .post-aside::before {
   left: -26px;
@@ -758,7 +758,7 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
-  padding: 100px 100px 332px 100px;
+  padding: 100px 100px 316px 100px;
   transition: -webkit-transform 1s cubic-bezier(0.78, -0.09, 0.11, 1.03), margin 1s ease-out;
   transition: transform 1s cubic-bezier(0.78, -0.09, 0.11, 1.03), margin 1s ease-out;
 }
@@ -814,11 +814,11 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
   display: -ms-flexbox;
   display: flex;
   background: none;
-  margin: 48px auto 0;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   border: 5px solid #8e547b;
+  margin: 48px auto 16px;
 }
 .monitor-view .post .post-aside .liked-view .close-like:focus {
   outline: none;
@@ -831,6 +831,10 @@ body:hover .visually-hidden a, body:hover .visually-hidden input, body:hover .vi
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.monitor-view .post .post-aside .liked-view .likes p {
+  font-size: 36px;
+  font-weight: 200;
 }
 .monitor-view .post .post-aside .liked-view .likes .icon-heart {
   fill: #8e547b;
